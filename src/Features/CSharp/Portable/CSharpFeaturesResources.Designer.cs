@@ -62,6 +62,15 @@ namespace Microsoft.CodeAnalysis.CSharp {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add missing case labels.
+        /// </summary>
+        internal static string AddMissingCaseLabels {
+            get {
+                return ResourceManager.GetString("AddMissingCaseLabels", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to anonymous method.
         /// </summary>
         internal static string AnonymousMethod {
