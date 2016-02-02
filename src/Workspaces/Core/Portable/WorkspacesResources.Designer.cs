@@ -224,6 +224,15 @@ namespace Microsoft.CodeAnalysis {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Case Labels are missing.
+        /// </summary>
+        internal static string CaseLabelsAreMissing {
+            get {
+                return ResourceManager.GetString("CaseLabelsAreMissing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cast is redundant..
         /// </summary>
         internal static string CastIsRedundant {

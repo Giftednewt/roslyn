@@ -21,6 +21,8 @@ namespace Microsoft.CodeAnalysis.CSharp.CodeFixes.AddMissingSwitchLabels
         {
             var root = await context.Document.GetSyntaxRootAsync(context.CancellationToken).ConfigureAwait(false);
 
+            context.RegisterCodeFix(new AddMissingLabelsAction(context.Document, root), context.Diagnostics);
+
             var diagnostic = context.Diagnostics.First();
             var diagnosticSpan = diagnostic.Location.SourceSpan;
         }

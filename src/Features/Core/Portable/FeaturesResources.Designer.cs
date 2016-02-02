@@ -197,6 +197,15 @@ namespace Microsoft.CodeAnalysis {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add missing Case labels.
+        /// </summary>
+        internal static string AddMissingCaseLabels {
+            get {
+                return ResourceManager.GetString("AddMissingCaseLabels", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add optional parameters to &apos;{0}({1})&apos;.
         /// </summary>
         internal static string AddOptionalParametersTo {
